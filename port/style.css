@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.hero{
+    position:relative;/*used to move*/
+    width:100%;
+    height:100vh;/*view port height*/
+    background-color: #eee;
+}
+nav{
+    display:flex;/*align in row*/
+    width:90%;
+    margin:auto;/*automatically align in center*/
+    padding:20px 0px;
+    align-items: center;/*center webside*/
+    justify-content: space-between;
+}
+nav ul li{
+    display:inline-block;
+    list-style-type:none ;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-size: 100px;
+    font-weight:bold;
+}
+nav ul li a:hover{
+    color:aqua;
+}
+.main{
+    margin-top: 13%;
+    margin-left: 13%;
+}
+.main h1{
+    font-size: 150px;
+}
+span{
+    color:green;
+}
+.main p{
+    font-size: 80px;
+    color:gray;
+    font-weight: bold;
+    line-height:80px;/*space create between line*/
+}
+.main a{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    padding:15px;
+    border-radius: 10px;
+    margin-top:15px;
+}
+.image{
+    width:45%;
+    height:80%;
+    position: absolute;
+    bottom: 0;
+    right:100px;
+    }
+.image img{
+    height:100%;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translate(-50%);/*move towards x axsis*/
+    transition: bottom 1s left 1s;
+}
+.image:hover .shape{
+    bottom:40px;
+}
+.image:hover .boy{
+    left:45%;
+}
